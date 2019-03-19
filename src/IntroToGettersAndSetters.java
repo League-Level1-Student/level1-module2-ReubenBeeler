@@ -1,10 +1,13 @@
 public class IntroToGettersAndSetters {
 
+	
+}
+	
 class Taco {
 	private String meat;
 	private String sauce;
 	
-	void Taco(String meat, String sauce) {
+	Taco(String meat, String sauce) {
 		this.meat = meat;
 		this.sauce = sauce;
 	}
@@ -30,7 +33,7 @@ class Person {
 	private String name;
 	private String superpower;
 	
-	void Person(String name, String superpower) {
+	Person(String name, String superpower) {
 		this.name = name;
 		this.superpower = superpower;
 	}
@@ -50,6 +53,8 @@ class Person {
 	String getSuperpower() {
 		return this.superpower;
 	}
-}
-
+	
+	public String toString()  {
+		return getName() + " has mad " + this.superpower + " skills.";
+	}
 }
